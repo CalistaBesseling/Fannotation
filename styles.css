@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+/*https://codepen.io/kristen17/pen/xbbZebL*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    position: relative;
+    overflow: hidden; 
+    display: grid;
+    border-color: #151419;
+    width: 25rem;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+.card {
+    position: relative;
+    z-index: 555;
+    min-height: 10rem;
+    min-width: 25rem;
+    width: 100%;
+    display: grid;
+    text-align: center;
+    position: relative;
+    box-shadow: 0.063em 0.75em 1.563em rgb(0 0 0 / 78%);
+  }
+  
+.card-header {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    place-items: center;
+    justify-content: flex-end;
+    padding: 1.8em 1.8em 0em 1em;
+  }
+  
+  .card-header .close {
+    color: #d9d9d9;
+    width: 1.5rem;
+    cursor: pointer;
+  }
+  
+  .card-body {
+    width: 100%;
+    padding: 1em 2em 4em 5em;
+    text-align: left;
+  }
+  
+  .card-body h3 {
+    text-align: left;
+    color: #fff;
+    font-size: 1.2rem;
+    letter-spacing: 0.035em;
+    margin-top: 0em;
+    margin-bottom: 0.5em;
+    font-weight: 600;
+  }
+  
+  .card-body p {
+    text-align: left;
+    color: #cccccc;
+    font-size: 1rem;
+    letter-spacing: 0.031rem;
+    margin-bottom: 1em;
+  }
+  
+  .card .btn-second {
+    margin-left: 2em;
+  }
+  
+  .card.blue {
+    background: radial-gradient(
+      ellipse at right top,
+      #1DB954 0%,
+      #222821 65%,
+      #151419 100%
+    );
+    transition:
+        background 0.9s ease-in-out;
+  }
+  
+  .card.blue:hover {
+    background: radial-gradient(
+      ellipse at right top,
+      #1DB954 0%,
+      #222821 75%,
+      #151419 100%
+    );
+  }
+  
+  .card.blue .icon {
+    color: #5a81ff;
+  }
+  
+  .card.blue:before {
+    background: linear-gradient(
+        45deg,
+        #232228,
+        #232228,
+        #232228,
+        #232228,
+        #1DB954
+      )
+      border-box;
+  }
+  
+  .card.blue .btn-first {
+    margin-top: 1.5em;
+    margin-bottom: 1em;
+  }
+  
+  .card.blue .btn-first:hover {
+    background: #1DB954;
+  }
+
+  button {
+    background: #333e35;
+    color: #fff;
+    border-radius: 0.25em;
+    display: inline-block;
+    padding: 0.5em 1.5em;
+    border: none;
+    cursor: pointer;
+    font-size: 0.75rem;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+    margin-right: 1em;
+  }
+    button:hover {
+        background: #1DB954;
+        font-weight: 500;
+        transition: background 0.3s ease-in-out;
+    }
+
+.icon {
+    width: 2.5rem;
+    margin-bottom: 0em;
+    margin-top: 1em;
+    margin-left: 1em;
+}
+
+.status {
+    color: #cccccc;;
+    font-size: 0.875rem;
+    margin-top: 1em;
+}

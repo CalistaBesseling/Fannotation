@@ -22,7 +22,6 @@
       {
         "matches": ["https://open.spotify.com/*"],
         "js": ["Content.js"],
-        "css": ["styles.css"],
         "run_at": "document_idle"
       }
     ]
